@@ -4,7 +4,7 @@ import {
   loginUserThunk,
   refreshUserThunk,
   registerUserThunk,
-} from './options';
+} from './metods';
 
 const initialState = {
   user: { name: null, email: null },

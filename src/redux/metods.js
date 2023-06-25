@@ -33,7 +33,7 @@ import { registerUser } from './api/registerUser';
 import axios from 'axios';
 import { loginUser } from './api/loginUser';
 import { logoutUser } from './api/logoutUser';
-import { updateUser } from './api/updateUserUser';
+import { updateUser } from './api/updateUser';
 
 const setAuthHeader = token => {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
