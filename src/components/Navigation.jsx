@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+
 import { Link } from 'react-router-dom';
 import { getStateSelector } from 'redux/selector';
 
@@ -8,8 +9,12 @@ const Navigation = () => {
   return (
     <div>
       <nav>
-        <ul>
-          <li>
+        <ul style={{
+           listStyle:'none',
+           display: 'flex',
+          flexDirection: 'column',
+          }}>
+          <li >
             <Link to={'/'}>Home</Link>
           </li>
           <li>{auth.isLoggedIn && <Link to="/contacts">Contacts</Link>}</li>

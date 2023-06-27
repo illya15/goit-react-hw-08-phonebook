@@ -18,7 +18,15 @@ const LoginPage = () => {
 
   return (
     <>
-      <form onSubmit={handleSumbit}>
+      <form
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+        onSubmit={handleSumbit}
+      >
         <label>
           Email
           <input type="email" name="email" />
