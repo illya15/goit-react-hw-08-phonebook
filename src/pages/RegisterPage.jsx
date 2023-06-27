@@ -21,7 +21,7 @@ const RegisterPage = () => {
     <>
       <form onSubmit={handleSumbit}>
         <label>
-          Username
+          Name
           <input type="text" name="name" />
         </label>
         <label>

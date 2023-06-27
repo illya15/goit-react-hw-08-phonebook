@@ -1,49 +1,11 @@
-// // import { Form } from './Form/Form';
-// // import { Filter } from './Filter/Filter';
-// // import { ContactList } from './ContactList/ContactList';
 
-
-// import { Form } from './Form/Form';
-// import { Filter } from './Filter/Filter';
-// import { ContactList } from './ContactList/ContactList';
-
-// import { useDispatch } from 'react-redux';
-
-// import { useEffect } from 'react';
-// import { getContactsThunk } from 'redux/metods';
-
-// export const App = () => {
-//   const dispatch = useDispatch();
-
-//   useEffect(() => {
-//     dispatch(getContactsThunk());
-//   }, [dispatch]);
-
-//   return (
-//     <div
-//           // style={{
-//           //   display: 'flex',
-//           //   flexDirection: 'column',
-//           //   justifyContent: 'center',
-//           //   alignItems: 'center',
-//           //   color: '#010101',
-//           // }}
-//     >
-//       <h1>Phonebook</h1>
-//       <Form />
-//       <h2>Contacts</h2>
-//       <Filter />
-//       <ContactList />
-//     </div>
-//   );
-// };
 
 import { Route, Routes } from 'react-router-dom';
-import Layout from './Layout';
 import HomePage from 'pages/HomePage';
 import RegisterPage from 'pages/RegisterPage';
 import LoginPage from 'pages/LoginPage';
 import ContactsPage from 'pages/ContactsPage';
+import Layout from './Layout';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { refreshUserThunk } from 'redux/metods';
