@@ -76,7 +76,7 @@ export const ContactList = () => {
     <ul children={css.list}>
       {contacts.isLoading && <p>Loading...</p>}
       {contacts.error && (
-        <p>Oops!Something went wrong. Error: {contacts.error}</p>
+        <p>Oops! Error: {contacts.error}</p>
       )}
       {filterName.map(item => (
         <li className={css.item} key={item.id}>
